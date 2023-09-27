@@ -24,7 +24,7 @@ if (!pet) {
 
 const carouselSlides = document.querySelectorAll(".image");
 let currentIndex = 0;
-let interval = 2000;
+let interval = 4000;
 
 function nextSlide() {
     carouselSlides[currentIndex].classList.remove("active");
