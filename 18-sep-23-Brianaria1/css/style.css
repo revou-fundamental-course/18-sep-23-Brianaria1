@@ -99,7 +99,12 @@ select {
 }
 
 .image {
-    width: 100%
+    width: 100%;
+    display: hidden;
+}
+
+.active {
+    display: flex;
 }
 
 .content-image span {
@@ -113,4 +118,28 @@ select {
     background: lightgray;
     border-radius: 50%;
     width: 1.2em;
+}
+
+.error-message{
+    color: red;
+font-size: 0.8em;
+margin-top: 0;
+}
+
+@media screen and (max-width: 767px) {
+.content {
+    flex-direction: column;
+}
+
+.content-left {
+    width: 100%;
+}
+
+.content-right {
+    width: 100%;
+}
+
+.nav {
+    display: none !important;
+}
 }
