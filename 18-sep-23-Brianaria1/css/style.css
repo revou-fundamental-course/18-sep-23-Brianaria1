@@ -100,11 +100,11 @@ select {
 
 .image {
     width: 100%;
-    display: hidden;
+    display: none;
 }
 
 .active {
-    display: flex;
+    display: block;
 }
 
 .content-image span {
