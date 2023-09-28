@@ -32,6 +32,10 @@ function nextSlide() {
     carouselSlides[currentIndex].classList.add('active');
 }
 
+function startSlide () {
+    setInterval(nextSlide,interval);
+}
+
 (function() {
     setInterval(nextSlide, interval);
 })()
