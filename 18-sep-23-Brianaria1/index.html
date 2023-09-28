@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Fundamental Test</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/script.js"></script>
 </head>
 
 <body>
@@ -29,22 +28,28 @@
         <div id="content" class="content">
         <div id="content-left" class="content-left">
             <div id="content-image" class="content-image">
-                <img src="asset/Untitled.jpg" class="image" alt="slider image">
-                <span>Cuteness Galore</span>
+                <img src="asset/Untitled.jpg" class="image active" alt="slider image">
+                <img src="asset/cute.jpg" class="image">
         </div>
+    </div>
+        <button id="next-btn" onclick="nextSlide()">Next Image</button> */
         <div id="content-right" class="content-right">
-            <form class="content-form">
+            <form name="contact-form" class="content-form">
                 <label for="your-name">Your Name</label>
-                <imput type="text" name="your-name" placeholder="First & Last Name">
+                <input type="text" name="your-name" placeholder="First & Last Name">
+                <p id="name-error" class="error-message"></p>
 
                 <label for="email">Email Address</label>
-                <imput type="email" name="email" placeholder="Example@email.com">
+                <input type="email" name="email" placeholder="Example@email.com">
+                <p id="email-error" class="error-message"></p>
 
                 <label for="pet">What is your favorite pet?</label>
                  <select type="select" name="pet">
-                    <option>Cat</option>
-                    <option>Dog</option>
+                    <option value>--select pet--</option>
+                    <option value="cat">Cat</option>
+                    <option value="dog">Dog</option>
                  </select>
+                 <p id="pet-error" class="error-message"></p>
 
                  <div id="button" type="sumbit" class="button">SEND</div>
             </form>
@@ -56,5 +61,7 @@
             </div>
         </div>
     <footer></footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
